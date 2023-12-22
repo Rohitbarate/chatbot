@@ -1,0 +1,44 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rohit."
+
+  utter_about_trust:
+  - text: "Pimpri Chinchwad Education Trust (PCET) is committed to a legacy of providing quality education and holistic development. Established with a vision to empower generations, we are dedicated to academic excellence, character building, and community engagement."
+  - text: "At PCET, we prioritize fostering an inclusive learning environment where students are encouraged to excel academically, nurture critical thinking, and embrace innovation."
+  - text: "Guided by the principles of integrity, innovation, and inclusivity, PCET endeavors to nurture talent and prepare individuals to become global citizens contributing positively to society's growth and development."
+
+  utter_about_ncer:
+  - text: "NCER, known as Nutan college of Engineering and research, has a rich history spanning over a century with affiliations to a prestigious educational society in Maharashtra. It is an institute that prides itself on setting long-term goals like NIRF rankings and short-term goals focusing on educational excellence and universal human values."
+  - text: "The institute offers various educational programs, aiming to achieve accreditations and facilitate academic growth. With a strong emphasis on innovation and research, NCER tries to foster partnerships with industry, ensuring students are well-prepared to meet the demands of the workforce."
+  - text: "Guided by its hundred-year-old legacy, NCER is devoted to advancing the economic and educational standards of its community. Establishing a polytechnic and launching a four-year engineering college are among the many steps taken by the institute to empower students with knowledge and skills for their future careers."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
